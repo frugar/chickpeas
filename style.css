@@ -1,0 +1,309 @@
+html {
+  box-sizing: border-box;
+}
+ *, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.jost{
+font-family: 'Jost', sans-serif;
+font-weight: Normal; /*  This is just so when ever you call use this class, it uses the normal font weight by default */
+}
+
+.jost-300{ /* you can also name this rbt-light or whatever you like*/
+font-weight:300;
+}
+
+.jost-400{
+font-weight:400;
+}
+/*-----------------------Navigation menu----------------------------*/
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: /*#333*/ #111;
+}
+
+li.nav {
+  float: left;
+}
+li a {
+  display: block;
+  color: #f5f2ca;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #333;
+}
+
+.active {
+  color: #111;
+  background-color: #f48120;
+}
+/* -----------------------hero image----------------------- */
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.15)), url("images/house2.jpg");
+  height: 400px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+.hero-image-egg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.15)), url("images/hen1.jpg");
+  height: 400px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+
+.hero-text {
+  padding: 25px 0;
+  text-align: center;
+  display: inline-block;
+  color: white;
+}
+
+/*.logosubtext{
+   font-size: 300%;
+ }*/
+
+.divider {
+  border-top:12px solid #111;
+}
+/*------------------------General Text---------------------------*/
+body {
+  margin-top:0;
+  margin-right:0;
+  margin-left:0;
+  margin-bottom:50px;
+  font-family: 'Jost', sans-serif;
+  background-color: /*#576411 #4a5618*/ #f48120;
+  color: #222529;
+  font-weight:300;
+  font-size: 100%;
+  font-style: normal;
+  /*margin:2% 10%;*/
+}
+h1{
+   font-family: 'Cantata One', serif;
+   font-weight:bold;
+   color: #f5f2ca;
+   text-align: center;
+ }
+h2{
+   font-family: 'Cantata One', serif;
+   font-size: 2em;
+   font-weight:bold;
+   text-align: center;
+   color: #f48120;
+   /*border-bottom:1px solid #222529;*/
+ }
+h3{
+   font-family: 'Cantata One', serif;
+   font-size: 1.5em;
+   text-align: center;
+   font-weight:bold;
+   color: /*#71444a*/ #572d33;
+   border-bottom:1px solid gray;
+ }
+ h3.leftalign{
+    font-family: 'Cantata One', serif;
+    font-size: 1.5em;
+    text-align: left;
+    font-weight:bold;
+    color: #572d33;
+    border-bottom:0px solid gray;
+  }
+ h4{
+    font-family: 'Cantata One', serif;
+    text-align: center;
+    font-weight:bold;
+    color: #222529;
+  }
+ p.strong{
+   font-weight:500;
+ }
+.intro{
+  margin-top:5%;
+  margin-right:15%;
+  margin-left:15%;
+  margin-bottom:5%;
+  color: #222529;
+  font-size: 1.25em;
+  font-weight:bold;
+}
+.stories{
+  margin-top:0%;
+  margin-right:10%;
+  margin-left:10%;
+  margin-bottom:5%;
+  color: #222529;
+  font-size: 1.25em;
+  font-weight:normal;
+}
+.info{
+  margin-top:0%;
+  margin-right:20%;
+  margin-left:20%;
+  margin-bottom:5%;
+  color: #222529;
+  font-size: 1.25em;
+  font-weight:normal;
+}
+p.artcap{
+display: inline-block;
+}
+
+ /*------------------------homepage Harvwest schedule---------------------------*/
+ ul{
+   text-align: left;
+   list-style-type:none;
+ }
+ li{
+   font-size: 1.25em;
+   font-weight:normal;
+ }
+ /*------------------------organic standards list---------------------------*/
+ ul.organicstandards{
+   list-style-type:disc;
+   text-align: left;
+   margin-left:10%;
+ }
+ li.organicstandards{
+   font-size: 1em;
+   font-weight:normal;
+ }
+
+
+/* Create three equal columns that floats next to each other */
+.row {
+  column-gap: 40px;
+  /*border:1px solid gray;*/
+  margin:0 10%;
+
+}.column {
+  background-color: #f5f2ca;
+  float: left;
+  width: 31%;
+  padding-left:1em;
+  padding-right:1em;
+  /*border:1px solid gray;*/
+  border-radius: 5%;
+  margin:1% 1%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+ /*------------------------images on sub pages---------------------------*/
+img.float-left{
+  float: left;
+  margin-top: 0.25em;
+  margin-bottom: 0.5em;
+  margin-left: 1em;
+  margin-right: 1em;
+  border-radius: 5%;
+  /*border:2px solid black;*/
+}
+img.float-right{
+  float: right;
+  margin-top: 0.25em;
+  margin-bottom: 0.5em;
+  margin-left: 1em;
+  margin-right: 1em;
+  border-radius: 5%;
+  /*border:2px solid black;*/
+}
+.cleanup {
+  clear:both;
+}
+
+img.center{
+  text-align: center;
+  margin-top: 0em;
+  margin-bottom: 0.5em;
+  margin-left: 1em;
+  margin-right: 1em;
+  border-radius: 5%;
+}
+
+p.contenttxt{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  /*border:1px solid red;*/
+}
+ /*------------------------footer---------------------------*/
+
+ .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #111;
+   color: white;
+   text-align: center;
+   padding: 1em;
+ }
+/*footer{
+  /*border:1px solid blue;
+}*/
+footer img {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.foot-center {
+  margin: auto;
+  width: 100%;
+  /*border: 3px solid green;*/
+  padding: 10px;
+  text-align: center;
+}
+.socicons{
+  display: inline-block;
+}
+.address{
+  display: inline-block;
+}
+
+/* -----------------------Newsletter signup----------------------- */
+.newsletter{
+  text-align: center;
+}
+.newsletter button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #555;
+  color: white;
+}
